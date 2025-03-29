@@ -1,15 +1,15 @@
 package documents;
 
-import Utility.DocumentDB;
+import Utility.SWDocumentDB;
 
 public class Ask {
 
 	public static void main(String[] args) {
-		DocumentDB.print(DocumentDB.PHASE_ONE_CONCEPT);
-		DocumentDB.print(DocumentDB.PHASE_TWO_DEFINITION);
-		DocumentDB.print(DocumentDB.PHASE_THREE_DEVELOPMENT);
-		DocumentDB.print(DocumentDB.PHASE_FOUR_MANUFACTURES);
-		DocumentDB.print(DocumentDB.PHASE_FIVE_CONFIRMATION);
-		DocumentDB.print(DocumentDB.PHASE_SIX_CONMERCIAL);
+		SWDocumentDB.print(SWDocumentDB.PHASE_ONE_CONCEPT);
+		SWDocumentDB.print(SWDocumentDB.PHASE_TWO_DEFINITION);
+		SWDocumentDB.print(SWDocumentDB.PHASE_THREE_DEVELOPMENT);
+		SWDocumentDB.print(SWDocumentDB.PHASE_FOUR_MANUFACTURES);
+		SWDocumentDB.print(SWDocumentDB.PHASE_FIVE_CONFIRMATION);
+		SWDocumentDB.print(SWDocumentDB.PHASE_SIX_CONMERCIAL);
 	}
 }

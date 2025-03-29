@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DocumentDB {
+public class SWDocumentDB {
 	
 	private static final Map<String,List<String>> SOFTWARE_DOCS = new HashMap<>();
 	
