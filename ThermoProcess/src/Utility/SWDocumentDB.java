@@ -9,12 +9,12 @@ public class SWDocumentDB {
 	
 	private static final Map<String,List<String>> SOFTWARE_DOCS = new HashMap<>();
 	
-	public static final String PHASE_ONE_CONCEPT = "Concept(DTI-DTC)";
-	public static final String PHASE_TWO_DEFINITION = "Definition(DTC-SDC)";
-	public static final String PHASE_THREE_DEVELOPMENT = "Development(SDC-SMC)";
-	public static final String PHASE_FOUR_MANUFACTURES = "Manufacture(SMC-CTC)";
-	public static final String PHASE_FIVE_CONFIRMATION = "Confirmation(CTC-PRC)";
-	public static final String PHASE_SIX_CONMERCIAL = "Commercial(PRC-PCC)";
+	public static final String PHASE_ONE_CONCEPT = "Concept Checkpoint(DTI-DTC)";
+	public static final String PHASE_TWO_DEFINITION = "Definition Checkpoint(DTC-SDC)";
+	public static final String PHASE_THREE_DEVELOPMENT = "Development Checkpoint(SDC-SMC)";
+	public static final String PHASE_FOUR_MANUFACTURES = "Manufacture Checkpoint(SMC-CTC)";
+	public static final String PHASE_FIVE_CONFIRMATION = "Confirmation Checkpoint(CTC-PRC)";
+	public static final String PHASE_SIX_CONMERCIAL = "Commercial Checkpoint(PRC-PCC)";
 	
 	static {
 		SOFTWARE_DOCS.put(PHASE_ONE_CONCEPT, Arrays.asList("Customer Wants","CRD", "CRD Review(Dev)", "Tech Assessment(Dev)", "Tech Assessment Review(Dev)"));
@@ -32,7 +32,7 @@ public class SWDocumentDB {
 		String reset = "\u001B[0m";
 		System.out.println(red + phase + ":" + reset);
 		for(String file : SOFTWARE_DOCS.get(phase)) {
-			System.out.println(blue + file + reset);
+			System.out.println("  " +blue + file + reset);
 		}
 		
 	}
